@@ -172,8 +172,32 @@ document.getElementById("highRateValues").addEventListener("click",function() {
     if(!confirm("Are you sure you want to set values to high rate? Your device may not handle it if you aren't careful. If the simulation crashes, click 'reset values', then 'stop the script' then 'start the script'")) {
       return;
     }
-    
+    document.getElementById("gravityXSlider").max = 10;
+    document.getElementById("gravityXSlider").min = -10;
+    document.getElementById("gravityYSlider").max = 10;
+    document.getElementById("gravityYSlider").min = -10;
+    document.getElementById("airResistance").max = 3;
+    document.getElementById("elasticity").max = 500;
+    document.getElementById("stringLength").max = 125000;
+    document.getElementById("maxLength").max = 2147483647;
+    document.getElementById("ballWeight").max = 250;
+    document.getElementById("stringResistance").max = 250;
+    document.getElementById("anchorsAmount").max = 50;
+    document.getElementById("ballsAmount").max = 50;
+    highRate = true;
   } else if(highRate) {
-    
+    document.getElementById("gravityXSlider").max = 3;
+    document.getElementById("gravityXSlider").min = -3;
+    document.getElementById("gravityYSlider").max = 3;
+    document.getElementById("gravityYSlider").min = -3;
+    document.getElementById("airResistance").max = 1;
+    document.getElementById("elasticity").max = 100;
+    document.getElementById("stringLength").max = 250;
+    document.getElementById("maxLength").max = 1000;
+    document.getElementById("ballWeight").max = 10;
+    document.getElementById("stringResistance").max = 10;
+    document.getElementById("anchorsAmount").max = 20;
+    document.getElementById("ballsAmount").max = 20;
+    highRate = false;
   }
-})
+});
