@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.0/lib/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/p5.js-compatibility@0.2.0/src/data.js"></script><script src="https://cdn.jsdelivr.net/npm/p5.js-compatibility@0.2.0/src/shapes.js"></script><script src="https://cdn.jsdelivr.net/npm/p5.js-compatibility@0.2.0/src/preload.js"></script><script src="https://cdn.jsdelivr.net/npm/p5.sound@0.3.0/dist/p5.sound.min.js"></script>
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <main>
+      <h1 class = "title">Springs simulator</h1>
+    </main>
+    <p>Gravity X: <input type="range" min="-3" max="3" step="0.1" value="0" id="gravityXSlider"><span id="gx">0</span>, Gravity Y: <input type="range" min="-3" max="3" step="0.1" value="0.5" id="gravityYSlider"><span id="gy">0.5</span></p>
+    <p>Air resistance: <input type="range" min="0" max="1" step="0.01" value="0" id="airResistance"><span id="ar">0</span>, Elasticity: <input type="range" min="0" max="100" value="50" id="elasticity"><span id="el">50</span></p>
+    <p>String length: <input type="range" min="0" max="250" step="10" value="100" id="stringLength"><span id="sl">100</span>, Max length: <input type="range" min="1" max="1000" value="500" id="maxLength"><span id="ml">500</span></p>
+    <p>Ball weight: <input type="range" min="0" max="10" step="0.1" value="5" id="ballWeight"><span id="bw">5</span>, String Resistance: <input type="range" min="0" max="10" step="0.1" value="5" id="stringResistance"><span id="sr">5</span></p>
+    <script src="script.js"></script>
+    <footer>
+            <p>This webpage is created by <a href="https://github.com/corruptu77">@corruptu77</a></p>
+    </footer>
+</body></html>
